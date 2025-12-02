@@ -1,0 +1,101 @@
+/* ================== DANGER ZONE - important stuff that could ruin the style or function of the website if changed ================== */
+
+.page-container { /* contains everything in the <body> tag */
+    font-family: "Jost", "sans-serif";
+}
+
+.jost-default { /* jost font CSS. if you wanna change the font, you gotta change this too i think */
+    font-family: "Jost", "sans-serif";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content-container { /* contains everything that isn't header and footer */
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+.center-logo-stuff { /* for the center logo stuff. technically not too important but likely held together with duct tape, string, gum and a dream */
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* ================== NAVBAR CSS ================== */
+
+.navbar {
+    /* need to tone down the padding AFTER we add the logo */
+    max-width: 100%;
+    top: 0;
+    position: sticky;
+    margin: -10px; /* it being negative is fine, don't touch it */
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 9px; /* not sure how to let the banner stretch across the screen w/o being pixel perfect. replace with your own tech if you know */
+    padding-right: 9px; /* the reason you have to be pixel perfect is because the scroll bar appears if you overshoot, and the end of the banner is visible if you undershoot */
+    background-color: rgb(0, 0, 168);
+}
+
+#nav-logo {
+    margin-left: 200px; /* don't let it touch the sides of the screen! */
+}
+
+.other-nav-options {
+    float: right;
+    margin-right: 200px; /* we need REALLY good whitespace */
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.other-nav-options a {
+    margin-left: 50px;
+    padding: 7px;
+    background-color: blue;
+    border-radius: 5px;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+/* when the options are hovered over, change the bg colour for a bit of flair */
+
+.other-nav-options a:hover {
+    background-color: rgb(86, 86, 255);
+}
+
+/* is it bad etiquette to be changing a colours like this? if you don't like it, just add `color: white` to the one above the above one and delete the below 3. maybe add !important if it doesn't work */
+
+.other-nav-options a:link{
+    color: white;
+}
+
+.other-nav-options a:visited{
+    color: lavender;
+}
+
+.other-nav-options a:active{
+    color: azure;
+}
+
+/* ================== MISC ================== */
+
+footer { /* most of the stuff here is copied or modified from the banner */
+    width: 100%;
+    bottom: 0;
+    margin: -10px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: gainsboro;
+    text-align: center;
+    color: red;
+}
+
+.img-placeholder {
+    background-color: rgb(34, 238, 238);
+    color: black;
+    border: 1px solid rgb(15, 0, 153);
+    padding: 10px;
+}
