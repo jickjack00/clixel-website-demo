@@ -44,21 +44,26 @@
     position: sticky; /* debating whether to actually make this sticky or not */
     /* alternative: could not make it sticky - less on screen, more space, but lacks interactivity when scrolled far down */
     margin: -10px; /* it being negative is fine, don't touch it */
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 9px; /* not sure how to let the banner stretch across the screen w/o being pixel perfect. replace with your own tech if you know */
     padding-right: 9px; /* the reason you have to be pixel perfect is because the scroll bar appears if you overshoot, and the end of the banner is visible if you undershoot */
     /* and no, overflow doesn't fix it */
     background-color: rgb(0, 0, 168);
 }
 
+.navbar * {
+    /* keeps the other navbar buttons on the same Y-level as logo. don't touch :) */
+    display: inline-block;
+}
+
 #nav-logo {
     margin-left: 200px; /* don't let it touch the sides of the screen! */
+    display: inline-block;
 }
 
 .other-nav-options {
     float: right;
-    margin-top: -2%;
     margin-right: 200px; /* we need REALLY good whitespace */
 }
 
@@ -138,12 +143,22 @@ div.index-description > div {
 /* ================== MEDIA QUERIES ================== */
 
 @media screen and (max-width:900px) {
-  div.index-description {
-    flex-direction: column;
-  }
+    div.index-description {
+        flex-direction: column;
+    }
 }
 
 /* ================== MISC ================== */
+
+/* image aside text AND VICE VERSA!!!! */
+.image-aside-text * {
+    display: inline-block;
+}
+
+.image-aside-text {
+    display: flex;
+    flex-direction: row;
+}
 
 footer { /* most of the stuff here is copied or modified from the banner */
     width: 100%;
