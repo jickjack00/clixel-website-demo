@@ -16,8 +16,10 @@
 </head>
 <body>
     <div class="page-container"> <!-- this div contains everything on the body of the page -->
-        <div class="navbar">
-            <img class="img-placeholder" id="nav-logo" alt="The logo for Clixel Games." onclick="location.href='index.html'" style="cursor: pointer;"> <!-- sends you to home page when clicked. could make it an <a> tag or no? -->
+        <div class="navbar"> <!-- see style.css for bug report on banner. it's tricky -->
+            <div>
+                <img class="img-placeholder" id="nav-logo" alt="The logo for Clixel Games." onclick="location.href='index.html'" style="cursor: pointer;"> <!-- sends you to home page when clicked. could make it an <a> tag or no? -->
+            </div>
             <!-- also don't forget to remove the class after adding the logo!!!! it's cyan to make it obvious where the logo is supposed to be! -->
             <div class="other-nav-options">
                 <a href="index.html">Home</a>
@@ -32,8 +34,27 @@
                 <h2>Pushing the boundaries of interactive entertainment.</h2>
                 <br><br><br><br><br><br><br><br><br><br><br> <!-- necessary :( -->
                 <hr>
+                <br><br>
             </div>
-            <p><br>Fluff content.<br>Random content that makes no sense.<br>Placeholder stuff to take up space.<br>I could just spam brs but<br>that's no fun, is it?<br>Isn't it more fun by just<br>spamming text that makes<br>no sense? I guess you get to<br>see what it means to be a developer sometimes.<br>Even though I'm not a good one.<br>I still try.<br>And I mean, so what<br>if I made a bad website?<br>It can all be fixed.<br>I also don't think I'm a good<br>developer attitude-wise... I'm very informal<br>but who knows. Maybe that's<br>perfect.<br><br>I wrote all this out<br>assuming that would take up enough space.<br>Conclusion<br>It didn't.<br>So here's just a tiny bit more.<br>This should be ok.</p>
+            <div class="index-description">
+                <div class="left-images-index">
+                    <img class="img-placeholder" id="left-img-1" alt="LEFT IMAGE 1"><br>
+                    <img class="img-placeholder" id="left-img-2" alt="LEFT IMAGE 2"><br>
+                    <img class="img-placeholder" id="left-img-3" alt="LEFT IMAGE 3">
+                </div>
+                <div class="mini-description-text">
+                    <h2 style="font-size: 34px;"><u>What is Clixel?</u></h2>
+                    <p style="font-size: 20px;">We are an indie game development studio set on making accessible high-quality games and pushing the boundaries of game development with each release, with no catches. We believe that the quality of the game comes first and that satisfying customers should be a main priority so we spare no effort in making each game the best it can be. With this goal in mind, players can experience the next generation of games without bugs or glitches to disrupt the immersion and enjoyment each game brings.<br><br>
+                    <span style="font-size: 22px;"><u>With Clixel, the best games are only a couple Clix away.</u></span></p><br><br>
+                    <h2 style="font-size: 32px;"><u>Endless Ways to Play</u></h2>
+                    <p style="font-size: 20px;">We build our games with several control schemes in mind so that anyone can enjoy them how they want. The optimisation of our games also makes them playable on countless machines. We don't leave optimisation up to the player and we don't rely on external developers to create ways to freely reduce the optimisation we need to do. It's up to us, as the developers, hand-make every experience perfectly, and that's what we do.</p>
+                </div>
+                <div class="right-images-index">
+                    <img class="img-placeholder" id="right-img-1" alt="RIGHT IMAGE 1"><br>
+                    <img class="img-placeholder" id="right-img-2" alt="RIGHT IMAGE 2"><br>
+                    <img class="img-placeholder" id="right-img-3" alt="RIGHT IMAGE 3">
+                </div>
+            </div>
         </div>
 
 
@@ -41,7 +62,7 @@
         <!-- just spaced out so you realise it's the footer... i'll crunch down this space when it's done -->
         <footer>
             <!-- clueless in the legal area, please change this to make it accurate -->
-            <p style="font-size: 18px;"><u>© Clixel Games 2025-2026.</u></p> <!-- if the underline makes it misleading to believing it's a link, just remove the <u> -->
+            <p style="font-size: 18px;"><u>© Clixel Games 2025 - 2026.</u></p> <!-- if the underline makes it misleading to believing it's a link, just remove the <u> -->
             <!-- and if it isn't misleading and you would have somewhere to click, let me know -->
         </footer>
     </div>
