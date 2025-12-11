@@ -140,6 +140,21 @@ div.index-description > div {
     margin-left: -20px;
 }
 
+/* ================== GAMES.HTML EXCLUSIVE ================== */
+
+.game-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-description {
+    margin-left: 20px  ;
+}
+
+.game-description * {
+    text-align: right;
+}
+
 /* ================== MEDIA QUERIES ================== */
 
 @media screen and (max-width:900px) {
@@ -165,8 +180,8 @@ footer { /* most of the stuff here is copied or modified from the banner */
     bottom: 0;
     margin: -10px;
     margin-top: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 9px;
     padding-right: 9px;
     background-color: gainsboro;
