@@ -1,14 +1,3 @@
-/* HUGE issue: firefox DOESN'T APPEAR TO USE MARGIN-BOTTOM.
-    it doesn't seem to interpret it the same way as others
-    this RUINS the look of the margin and everything else
-    this sucks
-    why does it not use margin-bottom
-    that's dumb
-    is it another word then? i'm down to use it if YOU TOLD ME
-
-    HOWEVER it might be the fact i'm using a weird firefox version so get owned idiots
-*/
-
 /* ================== DANGER ZONE - important stuff that could ruin the style or function of the website if changed ================== */
 /* i mean, generally, you don't touch any css because any of it could break anything, but i mean this is the very important stuff */
 
@@ -225,4 +214,31 @@ footer { /* most of the stuff here is copied or modified from the banner */
     border: 1px solid rgb(15, 0, 153);
     padding: 10px;
     text-align: center;
+}
+
+.game-description {
+    display: flex;
+}
+
+.game-description p {
+    text-align: left;
+}
+
+aside {
+    display: flex; 
+    width: 100%;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: rgb(34, 238, 238);
+}
+
+#desc-words {
+    margin-right: 5%;
+    width: 200%; /* not sure how this works but it does */
+}
+
+#aside-desc {
+    width: 50%;
+    margin-right: 5%;
+    text-align: right;
 }
