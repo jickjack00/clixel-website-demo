@@ -242,3 +242,9 @@ aside {
     margin-right: 5%;
     text-align: right;
 }
+
+/* ================== MEDIA QUERIES/FLEXBOX ================== */
+
+@media screen and (min-width: 700px) {
+    /* developing this soon */
+}
