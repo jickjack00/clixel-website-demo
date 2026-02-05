@@ -27,6 +27,8 @@
 /* ================== NAVBAR CSS ================== */
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     /* need to tone down the padding (top and bottom) AFTER we add the logo */
     max-width: 100%;
     top: 0;
@@ -44,12 +46,12 @@
 
 .navbar * {
     /* keeps the other navbar buttons on the same Y-level as logo. don't touch :) */
-    display: inline-block;
+    display: flex;
 }
 
 #nav-logo {
     margin-left: 200px; /* don't let it touch the sides of the screen! */
-    display: inline-block;
+    display: flex;
 }
 
 .other-nav-options {
@@ -176,13 +178,59 @@ div.index-description > div {
 
 /* ================== MEDIA QUERIES ================== */
 
+@media screen and (max-width:1280px) {
+    .content-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar * {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+
+    .other-nav-options {
+        justify-content: space-around;
+    }
+
+    .left-images-index, .right-images-index {
+        display: none;
+    }
+}
+
 @media screen and (max-width:900px) {
     div.index-description {
         flex-direction: column;
     }
 }
 
+@media screen and (max-width:650px) {
+    .other-nav-options {
+        margin-right: 0px;
+    }
+}
+
 /* ================== MISC ================== */
+
+.index-game-button {
+    border: 2px solid blue;
+    background-color: blue;
+    transition-duration: 0.4s;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.index-game-button:hover {
+    background-color: white;
+    color: black;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+}
 
 /* image aside text AND VICE VERSA!!!! */
 .image-aside-text * {
