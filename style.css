@@ -185,7 +185,6 @@ div.index-description > div {
     }
 
     .navbar * {
-        flex-direction: row;
         margin-bottom: 10px;
     }
 
@@ -195,6 +194,7 @@ div.index-description > div {
 
     .other-nav-options {
         justify-content: space-around;
+        float: none;
     }
 
     .left-images-index, .right-images-index {
@@ -296,3 +296,22 @@ aside {
 @media screen and (min-width: 700px) {
     /* developing this soon */
 }
+
+/* a bunch of text i'm writing to artificially inflate file size and increase annoyingness
+and increase the amount of lines i've written
+in order to make it appear as though
+i have written a lot
+when rather the contrary
+but technically not
+because i still do stuff
+but i just am lost a bit
+on where to go next
+because there's some bugs i can't fix
+and there's some other stuff i cba to do
+lol
+lmao
+haha
+it's funny
+i'll do it later
+thanks
+bye */
